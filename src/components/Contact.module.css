@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.social {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--grey);
+  font-weight: 400;
+  transition: var(--transition);
+}
+
+.link:hover {
+  color: var(--accent);
+}

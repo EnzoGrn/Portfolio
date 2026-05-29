@@ -1,0 +1,101 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 250px;
+  padding-top: 70px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1440px;
+}
+
+.hello,
+.tagline {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--text-strong);
+}
+
+.hello {
+  animation: fadeUp 0.8s cubic-bezier(0.694, 0, 0.335, 1) both;
+}
+
+.tagline {
+  animation: fadeUp 0.8s cubic-bezier(0.694, 0, 0.335, 1) 0.15s both;
+  max-width: 700px;
+}
+
+.contact {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeUp 0.8s cubic-bezier(0.694, 0, 0.335, 1) 0.3s both;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.wave {
+  display: inline-block;
+  cursor: pointer;
+  transform-origin: 70% 70%;
+}
+
+.animated {
+  animation: wave 1s ease-in-out;
+}
+
+.pointer {
+  display: inline-block;
+}
+
+@keyframes wave {
+  0%   { transform: none; }
+  15%  { transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg); }
+  30%  { transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg); }
+  45%  { transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg); }
+  60%  { transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg); }
+  75%  { transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg); }
+  100% { transform: none; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero { padding: 0 100px; padding-top: 70px; }
+}
+
+@media (max-width: 1024px) {
+  .hero { padding: 0 50px; padding-top: 70px; }
+  .hello, .tagline { font-size: 2rem; }
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 0 40px; padding-top: 80px; }
+  .hello, .tagline { font-size: 1.75rem; }
+  .inner { gap: 30px; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 0 25px; padding-top: 80px; }
+  .hello, .tagline { font-size: 1.4rem; }
+  .contact { font-size: 1rem; flex-wrap: wrap; }
+}

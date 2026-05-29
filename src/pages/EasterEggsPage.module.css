@@ -1,0 +1,91 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+}
+
+.inner {
+  max-width: 620px;
+  width: 100%;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text-strong);
+  margin-bottom: 16px;
+}
+
+.intro {
+  font-size: 0.95rem;
+  color: var(--grey);
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.item {
+  display: flex;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+
+.id {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  padding-top: 3px;
+  flex-shrink: 0;
+  width: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.universe {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--grey);
+}
+
+.hint {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 40px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--grey);
+  transition: var(--transition);
+}
+
+.back:hover {
+  color: var(--accent);
+}

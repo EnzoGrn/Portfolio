@@ -1,0 +1,25 @@
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 14px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  cursor: pointer;
+  animation: slideIn 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+.toast:hover {
+  border-color: var(--accent);
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

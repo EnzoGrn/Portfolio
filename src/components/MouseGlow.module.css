@@ -1,0 +1,23 @@
+.glow {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(52, 204, 64, 0.11) 0%,
+    transparent 70%
+  );
+  transition: left 0.08s ease, top 0.08s ease;
+}
+
+:global(body.night) .glow {
+  background: radial-gradient(
+    circle,
+    rgba(0, 123, 255, 0.12) 0%,
+    transparent 70%
+  );
+}

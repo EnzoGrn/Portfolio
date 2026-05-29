@@ -1,0 +1,43 @@
+.background {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: drift linear infinite;
+  will-change: transform;
+}
+
+.sparkle {
+  animation: drift linear infinite, twinkle ease-in-out infinite;
+  box-shadow: 0 0 4px 1px var(--accent);
+}
+
+@keyframes drift {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-60vw, 60vh);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1.4); }
+}
+
+:root:not(.night) .star {
+  background: var(--accent);
+  opacity: 0.35;
+}
+
+body:not(.night) .sparkle {
+  box-shadow: 0 0 3px 1px var(--accent);
+}

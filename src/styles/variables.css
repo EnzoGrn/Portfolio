@@ -1,0 +1,28 @@
+:root {
+  --black: #36363c;
+  --dark-grey: #444452;
+  --grey: #777777;
+  --green: #7ed957;
+  --slate: #afafbf;
+  --off-white: #e7e7e7;
+  --white: #ffffff;
+  --night: #171c28;
+
+  --font-main: 'DM Sans', sans-serif;
+  --font-mono: 'Inconsolata', monospace;
+
+  --bg: var(--white);
+  --text: var(--dark-grey);
+  --text-strong: var(--black);
+  --accent: var(--green);
+  --border: #e0e0e0;
+
+  --transition: all 0.2s ease-in-out;
+}
+
+body.night {
+  --bg: var(--night);
+  --text: var(--slate);
+  --text-strong: var(--off-white);
+  --border: #2e3650;
+}
