@@ -6,7 +6,7 @@ export const featuredProjects = [
     url: 'https://omgg.fr/fr/games/vermines',
     github: 'https://github.com',
     tech: ['Unity', 'C#', 'Photon Networking'],
-    image: null,
+    image: '/img/vermines.webp',
   },
   {
     name: 'BretsClub',
