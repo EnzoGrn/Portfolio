@@ -11,7 +11,7 @@ export default function Contact() {
             I am currently available for freelance opportunities or permanent positions. If you have a project in mind or would simply like to discuss possibilities, please feel free to contact me!
           </p>
           <a
-            href="mailto:enzogarnier.pro@gmail.com"
+            href="mailto:contact@enzogarnier.fr"
             className={`${styles.btn} highlight-link`}
           >
             Say Hello! 👋
