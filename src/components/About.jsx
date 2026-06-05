@@ -18,7 +18,7 @@ export default function About() {
             as well as game development with <strong>OMGG</strong>.
           </p>
           <p>
-            At the same time, my role as an assistant and later as a junior educational accompanist
+            At the same time, my role as an assistant and later as a junior pedagogical advisor
             in Epitech allowed me to develop my skills in team management,
             writing and conducting educational activities, as well as giving talks on
             various technologies and practices.
