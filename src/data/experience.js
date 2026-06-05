@@ -3,7 +3,7 @@ export const experience = [
     company: 'Epitech',
     url: 'https://www.epitech.eu/ecole-informatique-rennes/',
     time: 'SEP 2025 - AUG 2026',
-    position: 'Educational Accompanist, Junior',
+    position: 'Pedagogical Advisor, Junior',
   },
   {
     company: 'R2 Digital Agency',
@@ -15,7 +15,7 @@ export const experience = [
     company: 'Epitech',
     url: 'https://www.epitech.eu/ecole-informatique-rennes/',
     time: 'FEB 2023 - FEB 2024 (part-time)',
-    position: 'Educational Accompanist, Assistant',
+    position: 'Pedagogical Advisor, Assistant',
   },
   {
     company: 'Freelance',
