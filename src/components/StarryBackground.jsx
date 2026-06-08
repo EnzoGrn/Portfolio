@@ -24,17 +24,15 @@ export default function StarryBackground() {
       star.style.width = `${size}px`
       star.style.height = `${size}px`
 
-      star.style.left = `${randomBetween(-40, 120)}%`
-      star.style.top = `${randomBetween(-40, 120)}%`
-
+      star.style.left = `${randomBetween(0, 100)}%`
+      star.style.top  = `${randomBetween(0, 100)}%`
 
       const duration = randomBetween(6, 18)
-      const delay = randomBetween(-18, 0)
+      const delay    = randomBetween(-18, 0)
       star.style.animationDuration = `${duration}s`
-      star.style.animationDelay = `${delay}s`
+      star.style.animationDelay   = `${delay}s`
 
-      const opacity = randomBetween(0.2, 0.9)
-      star.style.opacity = opacity
+      star.style.opacity = randomBetween(0.2, 0.9)
 
       container.appendChild(star)
     }
