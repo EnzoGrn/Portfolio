@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /easter-eggs
+
+Sitemap: https://enzogarnier.fr/sitemap.xml
