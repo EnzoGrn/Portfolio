@@ -26,6 +26,15 @@ export const featuredProjects = [
     tech: ['Unity', 'C#', 'Photon Networking'],
     image: '/img/prophunt.png',
   },
+  {
+    name: 'Panic On Board!',
+    description:
+      'A 2D chase game inspired by Ultimate Chicken Horse. Players must navigate through a series of obstacles they create themselves, while avoiding hazards and trying to be the last one standing.',
+    url: 'https://youtu.be/Ts5N-ijVpJk',
+    github: 'https://github.com/EnzoGrn/PanicOnBoard',
+    tech: ['Unity', 'C#', 'Netcode'],
+    image: '/img/paniconboard.png',
+  }
 ]
 
 export const otherProjects = [
