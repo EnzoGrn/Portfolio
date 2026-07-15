@@ -35,10 +35,10 @@ export default function Hero() {
           <span>Get in touch </span>
           <span className={styles.pointer}>👉</span>
           <a
-            href="mailto:contact@enzogarnier.fr"
+            href="mailto:enzogrn.pro@gmail.com"
             className="highlight-link"
           >
-            contact@enzogarnier.fr
+            enzogrn.pro@gmail.com
           </a>
         </h3>
       </div>
