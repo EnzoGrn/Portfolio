@@ -1,4 +1,6 @@
-import { featuredProjects, otherProjects } from '../data/projects'
+import { useEffect, useState } from 'react'
+import { client } from '../lib/sanity'
+import { projectsQuery } from '../lib/queries'
 import FadeIn from './FadeIn'
 import styles from './Projects.module.css'
 
@@ -7,6 +9,17 @@ function TechTag({ tech }) {
 }
 
 export default function Projects() {
+  const [featuredProjects, setFeaturedProjects] = useState([])
+  const [otherProjects, setOtherProjects] = useState([])
+
+  useEffect(() => {
+    client.fetch(projectsQuery).then((data) => {
+      setFeaturedProjects(data.filter(p => p.featured))
+      setOtherProjects(data.filter(p => !p.featured))
+      console.log('Fetched projects:', data) // Log the fetched data for debugging
+    })
+  }, [])
+
   return (
     <>
       {/* Featured Projects */}
@@ -55,7 +68,7 @@ export default function Projects() {
                     </div>
                     <p>{project.description}</p>
                     <div className={styles.tags}>
-                      {project.tech.map(t => <TechTag key={t} tech={t} />)}
+                      {(project.tech ?? []).map(t => <TechTag key={t} tech={t} />)}
                     </div>
                   </div>
                 </div>
